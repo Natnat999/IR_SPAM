@@ -21,25 +21,13 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew || true # S'il existe
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: 8.2 # On force une version compatible avec AGP 8.2.0
 
     - name: Build with Gradle
-      # Si gradlew n'est pas présent, on utilise le gradle du runner
-      run: |
-        if [ -f "gradlew" ]; then
-          ./gradlew build
-        else
-          gradle build
-        fi
-
-    - name: Build Debug APK
-      run: |
-        if [ -f "gradlew" ]; then
-          ./gradlew assembleDebug
-        else
-          gradle assembleDebug
-        fi
+      run: gradle assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
