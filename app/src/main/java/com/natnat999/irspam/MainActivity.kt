@@ -190,7 +190,7 @@ fun IRSpamApp() {
                             }
                         }
                     )
-                    HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp), thickness = 0.5.dp)
+                    Divider(modifier = Modifier.padding(horizontal = 16.dp), thickness = 0.5.dp)
                 }
             }
         }
