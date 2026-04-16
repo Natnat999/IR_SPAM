@@ -1,4 +1,4 @@
-package com.nathan.irspam.ui.theme
+package com.natnat999.irspam.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

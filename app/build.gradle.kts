@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.nathan.irspam"
+    namespace = "com.natnat999.irspam"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.nathan.irspam"
+        applicationId = "com.natnat999.irspam"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
