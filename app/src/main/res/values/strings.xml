@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IR Spam</string>
+    <string name="no_ir_blaster">Votre téléphone n\'a pas d\'émetteur infrarouge.</string>
+    <string name="spam_mode">Mode Spam (Power Off All)</string>
+    <string name="start_spam">Démarrer le Spam</string>
+    <string name="stop_spam">Arrêter le Spam</string>
+</resources>
